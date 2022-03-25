@@ -1,0 +1,50 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  background-color: #9356DC;
+  margin: 3%;
+  border-radius: 15px;
+  &__image{
+    position: relative;
+    & img{
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+    & i{
+      position: absolute;
+      top: 5%;
+      right: 5%;
+      background-color: $tertiary-color;
+      padding: 1%;
+      text-decoration: none;
+      border-radius: 2px;
+      font-style: normal;
+      //  faire une foncction/mixin pour gérer la couleur du texte
+    }
+  }
+  &__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--text{
+      display: flex;
+      flex-direction: column;
+      margin-left: 5%;
+      margin-right: 5%;
+      & h3{
+        display: flex;
+        margin-top: 5%;
+        margin-bottom: 2px;
+      }
+      & div{
+        margin-bottom: 5%;
+      }
+    }
+    &--icon{
+      margin: 5%;
+    }
+  }
+}
