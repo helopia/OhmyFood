@@ -4,4 +4,13 @@
   flex-direction: column;
   width: 100%;
   color: white;
+  padding: 2%;
+  &__link{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
 }
