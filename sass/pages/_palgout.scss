@@ -1,0 +1,16 @@
+.heading{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &__button{
+    border: none;
+    background-color: white;
+    color: grey;
+    margin: 2%;
+  }
+}
+.iconbox{
+  width: 20px;
+  height: 20px;
+}

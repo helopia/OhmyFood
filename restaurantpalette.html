@@ -11,30 +11,35 @@
     <title>OhMyFood</title>
 </head>
 <body>
-<header class="header">
-    <h1 class="header__logo">OhMyFood</h1>
-    <button type="submit"><i class="fas fa-arrow-left"></i></button>
+<header class="heading">
+    <a class="heading__button" href="home.html"><i class="fas fa-arrow-left"></i></a>
+    <h1 class="heading__logo">OhMyFood</h1>
+    <div></div>
 </header>
 <main>
     <section class="menus">
         <img src="" alt="">
-        <h2>La palette du goût</h2>
-        <i class="fa-regular fa-heart card__footer--icon"></i>
-        <p>Entrées</p>
+        <div class="menus__title">
+            <h2>La palette du goût</h2>
+            <i class="fa-regular fa-heart fa-lg card__footer--icon"></i>
+        </div>
+        <div class="menus__subtitle">Entrées</div>
+        <div class="menus__tiret"></div>
         <div class="menus__card">
             <div class="menus__card--text">
-                <div>Fricassée d'escargot</div>
+                <div class="sizing">Fricassée d'escargot</div>
                 <div>Au piment d'Espelette</div>
             </div>
             <div class="menus__card--price">25€</div>
+            <div class="menus__card--checkbox"></div>
         </div>
-        <button class="nav__button">Explorer nos restaurants</button>
+        <div class="menus__button" id="menus__button"><button class="button">Commander</button></div>
     </section>
 </main>
 <footer class="footer">
     <h1 class="footer__logo">Ohmyfood</h1>
     <a class="footer__link" href="#">
-        <i class="fas fa-utensils"></i>
+        <i class="fas fa-utensils iconbox"></i>
         <div>Proposer un restaurant</div>
     </a>
     <a class="footer__link" href="#">
