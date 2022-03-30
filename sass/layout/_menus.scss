@@ -40,10 +40,11 @@
     &--text{
       display: flex;
       flex-direction: column;
-      flex-grow: 9;
       margin: 2%;
-      max-width: 300px;
+      flex-grow: 3;
+
       & div{
+        max-width: 250px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -53,13 +54,14 @@
       display: flex;
       align-items: flex-end;
       margin: 2%;
+      flex-grow: 1;
     }
     &--checkbox{
       background-color: $tertiary-color;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       display: none;
-      flex-grow: 2;
+      flex-grow: 1;
       justify-content: center;
       align-items: center;
       & i{
