@@ -39,10 +39,29 @@
       margin: 2%;
     }
     &--checkbox{
+      display: none;
       background-color: $tertiary-color;
       border-top-right-radius: 15px;
       border-bottom-right-radius: 15px;
       width: 15%;
+      position: relative;
+
+      & i{
+        color: $tertiary-color;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+    &:hover &--checkbox{
+      display: flex;
     }
   }
   &__button{
