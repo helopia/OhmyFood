@@ -3,4 +3,7 @@
   border-radius: 25px;
   background-color: $primary-color;
   color: white;
+  &:hover{
+    filter: saturate(2);
+  }
 }
