@@ -44,7 +44,7 @@
       flex-grow: 3;
 
       & div{
-        max-width: 250px;
+        width: 250px;
         text-overflow: ellipsis;
         white-space: nowrap;
         overflow: hidden;
@@ -53,6 +53,7 @@
     &--price{
       display: flex;
       align-items: flex-end;
+      justify-content: flex-end;
       margin: 2%;
       flex-grow: 1;
     }
