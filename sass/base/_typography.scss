@@ -4,6 +4,9 @@ body{
   display: flex;
   flex-direction: column;
   width: 100%;
+  animation: 3s fadeIn;
+  animation-fill-mode: forwards;
+  visibility: hidden;
 }
 main{
   display: flex;
@@ -21,4 +24,12 @@ h2{
 .sizing{
   font-size: 20px;
   font-weight: bolder;
+}
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }

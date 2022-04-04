@@ -23,7 +23,7 @@
       border-radius: 2px;
       font-style: normal;
       object-fit: cover;
-      //  faire une fonction/mixin pour gérer la couleur du texte
+      color:darken($tertiary-color,30%)
     }
   }
   &__footer{
