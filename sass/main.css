@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+h2 {
+  margin-left: 20px;
+  font-size: 28px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  padding: 2%;
+  border-radius: 25px;
+  height: 40px;
+  max-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: -webkit-linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+  background: -moz-linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+  background: -o-linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+  background: linear-gradient(to bottom right, #FF79DA 0%, #9356DC 100%);
+  border: none;
+  color: white;
+}
+.button:hover {
+  filter: saturate(2);
+  box-shadow: 2px 5px 16px 5px grey;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 50px #ccc;
+}
+.card__image {
+  position: relative;
+}
+.card__image img {
+  display: block;
+  width: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 170px;
+  object-fit: cover;
+}
+.card__image i {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  background-color: #99E2D0;
+  padding: 1%;
+  text-decoration: none;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: bold;
+  object-fit: cover;
+  color: #217460;
+}
+.card__footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__footer--text {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.card__footer--text h3 {
+  display: flex;
+  margin-top: 5%;
+  margin-bottom: 2px;
+}
+.card__footer--text div {
+  margin-bottom: 5%;
+}
+.card__footer--icon {
+  margin: 5%;
+}
+.card__footer i:hover {
+  color: #9356DC;
+}
+
+.footer {
+  background-color: #282626;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: white;
+  padding-left: 20px;
+}
+@media (min-width: 768px) {
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  color: white;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+.footer a i {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-right: 2%;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+.nav__location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.nav__location i {
+  padding: 5px;
+}
+.nav__location div {
+  padding: 5px;
+}
+.nav p {
+  text-align: center;
+}
+.nav__subtitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.process {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.process i {
+  color: grey;
+}
+.process__box {
+  display: flex;
+  align-items: center;
+  background-color: #F2F2F2;
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px grey;
+  width: 300px;
+}
+.process__box:hover {
+  background-color: #e4d5f6;
+}
+.process__box:hover .process__box--icon {
+  color: #9356DC;
+}
+.process__box--number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  margin-left: -10px;
+}
+.process__box--icon {
+  display: flex;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.process__box--text {
+  font-weight: bold;
+}
+
+.resto {
+  background-color: #F2F2F2;
+}
+
+.menus {
+  display: flex;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  align-items: center;
+}
+.menus img {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+.menus__subtitle {
+  display: flex;
+  text-align: left;
+}
+.menus__title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  margin-top: -5%;
+  background-color: #F2F2F2;
+  width: 100%;
+}
+.menus h2 {
+  font-family: "Shrikhand", cursive;
+  margin: 2%;
+}
+.menus__subtitle {
+  margin-left: 2%;
+}
+.menus__tiret {
+  background-color: #99E2D0;
+  height: 3px;
+  width: 30px;
+  margin-left: 2%;
+}
+.menus__card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  margin: 2%;
+  border-radius: 15px;
+  box-shadow: 0px 5px 15px grey;
+  width: 300px;
+  overflow: hidden;
+}
+.menus__card--text {
+  display: flex;
+  flex-direction: column;
+  margin: 3%;
+  gap: 5px;
+  max-width: 80%;
+  min-width: 0;
+}
+.menus__card--text h4 {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin: 5px;
+}
+.menus__card--text p {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  margin: 5px;
+}
+.menus__card--price {
+  display: flex;
+  align-items: flex-end;
+  margin: 2%;
+}
+.menus__card--checkbox {
+  background-color: #99E2D0;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  min-width: 15%;
+}
+.menus__card--checkbox i {
+  color: #99E2D0;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  animation: spin 450ms;
+  animation-timing-function: linear;
+}
+.menus__card:hover .menus__card--checkbox {
+  display: flex;
+}
+.menus__card:hover .menus__card--checkbox i {
+  display: flex;
+}
+.menus__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(90deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  75% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(450deg);
+  }
+}
+.heading {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.heading__button {
+  border: none;
+  background-color: white;
+  color: grey;
+  margin: 2%;
+}
+
+.iconbox {
+  width: 20px;
+  height: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.body {
+  animation-fill-mode: forwards;
+  visibility: visible;
+}
+
+@keyframes fadeIn {
+  99% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
