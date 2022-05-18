@@ -1,12 +1,10 @@
 body{
   font-family: $font-text;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  animation: 3s fadeIn;
-  animation-fill-mode: forwards;
-  visibility: hidden;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 100%;
 }
 main{
   display: flex;
@@ -17,19 +15,11 @@ h1{
   font-family: $font-title;
 }
 h2{
-  margin-right: 2%;
-  margin-left: 2%;
+  margin-left: 20px;
   font-size: 28px;
 }
-.sizing{
-  font-size: 20px;
-  font-weight: bolder;
+a{
+  text-decoration: none;
+  color: black;
 }
-@keyframes fadeIn {
-  99% {
-    visibility: hidden;
-  }
-  100% {
-    visibility: visible;
-  }
-}
+

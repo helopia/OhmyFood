@@ -1,6 +1,11 @@
 .button{
   padding: 2%;
   border-radius: 25px;
+  height: 40px;
+  max-width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @include gradient(to bottom right, $list1);
   border: none;
   color: white;

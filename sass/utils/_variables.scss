@@ -6,4 +6,6 @@ $tertiary-color: #99E2D0;
 $custom-color: #282626;
 $font-text: 'Roboto', sans-serif;
 $font-title: 'Shrikhand', cursive;
-$list1: $primary-color 0%,$primary-color 33%,$primary-color 33%,$secondary-color 66%, $secondary-color 66%, $secondary-color 100%;
+$list1: $secondary-color 0%, $primary-color 100%;
+$tablets:768px;// Medium devices (tablets, 768px and up)
+$pc:992px;// Large devices (desktops, 992px and up)
