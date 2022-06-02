@@ -103,6 +103,7 @@ a {
 }
 .card__footer--icon {
   margin: 5%;
+  transition: all 1s ease-out;
 }
 .card__footer i:hover {
   color: #9356DC;

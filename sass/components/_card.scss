@@ -27,8 +27,7 @@
       font-style: normal;
       font-weight: bold;
       object-fit: cover;
-      color:darken($tertiary-color,45%)
-
+      color:darken($tertiary-color,45%);
     }
   }
   &__footer{
@@ -52,6 +51,7 @@
     }
     &--icon{
       margin: 5%;
+      transition: all 1s ease-out;
     }
     & i:hover{
       color: $primary-color;
