@@ -1,17 +1,19 @@
 .footer{
-  @media(min-width:$tablets){
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-
-  }
   background-color: $custom-color;
   display: flex;
   flex-direction: column;
   width: 100%;
   color: white;
-  padding-left: 20px;
+  padding-left: 40px;
+  @media(min-width:$tablets){
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &__logo{
+    font-size: 18px;
+  }
   &__link{
     display: flex;
     flex-direction: row;

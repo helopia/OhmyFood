@@ -1,3 +1,17 @@
 .resto{
   background-color: #F2F2F2;
-}
+    &--align{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 80px;
+      @media (min-width:$tablets){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 2%;
+        }
+      }
+    }

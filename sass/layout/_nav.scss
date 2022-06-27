@@ -3,6 +3,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  @media(min-width:$tablets){
+    flex-direction: row;
+    justify-content: space-between;
+  }
   &__location{
     display: flex;
     flex-direction: row;
@@ -11,6 +15,9 @@
     margin: 10px;
     background-color: #F2F2F2;
     width: 100%;
+    @media(min-width:$tablets){
+      width: auto;
+    }
     & i{
       padding: 5px;
     }
