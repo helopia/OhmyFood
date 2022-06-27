@@ -1,15 +1,18 @@
 .card{
   display: flex;
   flex-direction: column;
-  margin: 5%;
+  width: 90%;
   border-radius: 15px;
   background-color: white;
   box-shadow: 0 0 50px #ccc;
-
+  max-width: 350px;
+  @media(min-width: $tablets){
+  }
   &__image{
     position: relative;
     & img{
       display: block;
+      min-width: 260px;
       width: 100%;
       border-top-left-radius: 15px;
       border-top-right-radius: 15px;
@@ -50,11 +53,25 @@
       }
     }
     &--icon{
-      margin: 5%;
+      margin: 10%;
       transition: all 1s ease-out;
-    }
-    & i:hover{
-      color: $primary-color;
+      &-transparent{
+        position: absolute;
+      }
+      &-purple{
+        position: absolute;
+        opacity: 0;
+      }
+      &:hover .card__footer--icon-purple{
+        background: linear-gradient(0deg, $primary-color, $secondary-color);
+        -webkit-background-clip: text;
+        color: transparent;
+        transition: all 1s;
+        opacity: 1;
+      }
+      &:hover .card__footer--icon-transparent{
+        opacity: 0;
+      }
     }
   }
 }
