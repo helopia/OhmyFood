@@ -8,6 +8,7 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   max-width: 100%;
+  margin: 0;
 }
 
 main {
@@ -200,7 +201,6 @@ a {
   flex-direction: column;
   width: 100%;
   color: white;
-  padding-left: 40px;
 }
 @media (min-width: 768px) {
   .footer {
@@ -212,6 +212,7 @@ a {
 }
 .footer__logo {
   font-size: 18px;
+  padding-left: 20px;
 }
 .footer__link {
   display: flex;
@@ -220,6 +221,7 @@ a {
   color: white;
   margin-bottom: 5px;
   margin-top: 5px;
+  padding-left: 20px;
 }
 .footer a i {
   display: flex;

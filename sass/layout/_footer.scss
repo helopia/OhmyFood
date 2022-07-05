@@ -4,7 +4,6 @@
   flex-direction: column;
   width: 100%;
   color: white;
-  padding-left: 40px;
   @media(min-width:$tablets){
     display: flex;
     flex-direction: row;
@@ -13,6 +12,7 @@
   }
   &__logo{
     font-size: 18px;
+    padding-left: 20px;
   }
   &__link{
     display: flex;
@@ -21,6 +21,7 @@
     color: white;
     margin-bottom: 5px;
     margin-top: 5px;
+    padding-left: 20px;
   }
   & a{
     & i{
