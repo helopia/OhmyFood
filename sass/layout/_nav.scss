@@ -5,8 +5,7 @@
   width: 95%;
   padding-bottom: 50px;
   @media(min-width:$tablets){
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
   }
   &__location{
     display: flex;
@@ -17,7 +16,7 @@
     background-color: #F2F2F2;
     width: 100%;
     @media(min-width:$tablets){
-      width: auto;
+
     }
     & i{
       padding: 5px;

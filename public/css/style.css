@@ -239,8 +239,7 @@ a {
 }
 @media (min-width: 768px) {
   .nav {
-    flex-direction: row;
-    justify-content: space-between;
+    width: 100%;
   }
 }
 .nav__location {
@@ -251,11 +250,6 @@ a {
   margin: 10px;
   background-color: #F2F2F2;
   width: 100%;
-}
-@media (min-width: 768px) {
-  .nav__location {
-    width: auto;
-  }
 }
 .nav__location i {
   padding: 5px;
@@ -340,7 +334,7 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 2%;
   }
 }
