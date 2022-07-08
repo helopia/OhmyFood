@@ -345,6 +345,26 @@ a {
   background-color: #F2F2F2;
   align-items: center;
 }
+.menus__icon {
+  transition: all 1s ease-out;
+}
+.menus__icon--transparent {
+  position: absolute;
+}
+.menus__icon--purple {
+  position: absolute;
+  opacity: 0;
+}
+.menus__icon:hover .menus__icon--purple {
+  background: linear-gradient(0deg, #9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  color: transparent;
+  transition: all 1s;
+  opacity: 1;
+}
+.menus__icon:hover .menuus__icon--transparent {
+  opacity: 0;
+}
 .menus__responsive {
   display: flex;
   flex-direction: column;

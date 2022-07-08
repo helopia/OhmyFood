@@ -3,6 +3,26 @@
   flex-direction: column;
   background-color: #F2F2F2;
   align-items: center;
+  &__icon{
+    transition: all 1s ease-out;
+    &--transparent{
+      position: absolute;
+    }
+    &--purple{
+      position: absolute;
+      opacity: 0;
+    }
+    &:hover .menus__icon--purple{
+      background: linear-gradient(0deg, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      color: transparent;
+      transition: all 1s;
+      opacity: 1;
+    }
+    &:hover .menuus__icon--transparent{
+      opacity: 0;
+    }
+  }
   &__responsive{
     display: flex;
     flex-direction: column;
